@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.7.3",
-    "@bundlr-network/client": "^0.9.11",
+   
     "@craco/craco": "^7.0.0",
     "@huddle01/huddle01-client": "^0.0.10",
     "@huddle01/huddle01-iframe": "^0.0.8",
