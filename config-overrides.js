@@ -11,7 +11,7 @@ module.exports = function override(config) {
         "os": require.resolve("os-browserify"),
         "url": require.resolve("url"),
         'process/browser': require.resolve('process/browser'),
-        "zlib": resolve.fallback: { "zlib": false },
+        "zlib": resolve.fallback { "zlib": false },
         "path": require.resolve("path-browserify")
     })
     config.resolve.fallback = fallback;
