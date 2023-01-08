@@ -70,7 +70,7 @@ function App() {
              
           </Route>
           <Route exact path="/tutor/:id" element={<Tutor/>} />
-          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/user" element={<Profile />} />
           <Route exact path="/livestreams" element={<Livestreams />} />
           <Route exact path="/program/:id" element={<ProgramPage/>} />
           <Route exact path="/course/:id" element={<CoursePage/>} />

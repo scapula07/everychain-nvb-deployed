@@ -55,10 +55,10 @@ export default function Learning() {
           
         <main className='flex pt-6 justify-between items-center'>
             <div className='flex bg-purple-900 items-center py-0.5  w-3/4 justify-evenly rounded-lg '>
-                <h5 className='text-sm font-semibold'>Hire instructors</h5>
-                <h5 className='text-sm'>Programs/Bootcamps</h5>
-                <h5 className='text-sm'> Courses</h5>
-                <h5 className='text-sm'> Communities</h5>
+            <Link to="/learn/tutors">    <h5 className='text-sm font-semibold'>Hire instructors</h5> </Link>
+            <Link to="/learn/programs">   <h5 className='text-sm'>Programs/Bootcamps</h5>   </Link>
+            <Link to="/learn/courses">    <h5 className='text-sm'> Courses</h5> </Link>
+            <Link to="/learn/communities/server/Encode">     <h5 className='text-sm'> Communities</h5></Link>
             </div>
              <div className='flex items-center space-x-1 px-2 py-1 rounded-full bg-purple-900'>
                 <BiFilter className='text-xl'/>

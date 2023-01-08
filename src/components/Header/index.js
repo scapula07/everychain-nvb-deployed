@@ -4,6 +4,7 @@ import StreamingBtn from '../StreamingButton'
 import {FiSettings} from "react-icons/fi"
 import {MdNotificationsNone} from "react-icons/md"
 import ConnectWallet from '../ConnectWallet'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -19,7 +20,7 @@ export default function Header() {
             
              <main className='flex space-x-4 items-center px-4  border-l  border-r'>
                <FiSettings className='text-lg'/>
-                <MdNotificationsNone className='text-lg '/>
+               <Link to="/notifications"> <MdNotificationsNone className='text-lg '/></Link>
 
              </main>
 

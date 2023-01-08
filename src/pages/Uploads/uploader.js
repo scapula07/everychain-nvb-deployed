@@ -3,7 +3,7 @@ import { Player, useAssetMetrics, useCreateAsset } from '@livepeer/react';
  import {BsFillCloudUploadFill} from "react-icons/bs"
  import { parseArweaveTxId, parseCid } from 'livepeer/media';
 import { useDropzone } from 'react-dropzone';
-import { bundlr } from '../../bundlrUtil';
+// import { bundlr } from '../../bundlrUtil';
 import { providers } from "ethers";
 import { WebBundlr } from "@bundlr-network/client";
 import { collection, setDoc,doc,getDoc,addDoc} from  'firebase/firestore'
@@ -80,52 +80,52 @@ export default function Uploader({setTrigger}) {
 
           const uploadToArweave=async()=>{
 
-            try{
-                const provider = new providers.Web3Provider(window.ethereum);
-                await provider._ready();
+            // try{
+            //     const provider = new providers.Web3Provider(window.ethereum);
+            //     await provider._ready();
         
-                const bundlr = new WebBundlr("https://devnet.bundlr.network", "matic", provider,
-                {
-                  providerUrl: "https://polygon-mumbai.g.alchemy.com/v2/5-PAZiyQpRy1ouUxhD2vW3_KjGwxPRWi",
-              }
-                );
-                await bundlr.ready();
+            //     const bundlr = new WebBundlr("https://devnet.bundlr.network", "matic", provider,
+            //     {
+            //       providerUrl: "https://polygon-mumbai.g.alchemy.com/v2/5-PAZiyQpRy1ouUxhD2vW3_KjGwxPRWi",
+            //   }
+            //     );
+            //     await bundlr.ready();
         
-                console.log(bundlr,"bbundlr") ;
-                const price = await bundlr.getPrice(video?.size);
-                console.log(price,"price")
-                const funded= await bundlr.fund(price);
-                toast("Funding bundlr node")
-               console.log(funded,"funded")
-               var readStream = fileReaderStream(video, [])
-               console.log(readStream,"ssssss")
-               toast("Uploading to Arweave")
-               const { id } = await bundlr.upload(readStream );
+            //     console.log(bundlr,"bbundlr") ;
+            //     const price = await bundlr.getPrice(video?.size);
+            //     console.log(price,"price")
+            //     const funded= await bundlr.fund(price);
+            //     toast("Funding bundlr node")
+            //    console.log(funded,"funded")
+            //    var readStream = fileReaderStream(video, [])
+            //    console.log(readStream,"ssssss")
+            //    toast("Uploading to Arweave")
+            //    const { id } = await bundlr.upload(readStream );
               
 
-                  console.log(`Data uploaded ==> https://arweave.net/${id}`);
-                  console.log(id)
+            //       console.log(`Data uploaded ==> https://arweave.net/${id}`);
+            //       console.log(id)
 
-                  const docRef = await addDoc(collection(db, "videos"), {
+            //       const docRef = await addDoc(collection(db, "videos"), {
                      
-                    title,
-                    description,
-                    assetID:asset?.[0]?.playbackId,
-                    date:Number(Date.now()),
-                    creator: account,
-                    videoUrl:`https://arweave.net/${id}`
+            //         title,
+            //         description,
+            //         assetID:asset?.[0]?.playbackId,
+            //         date:Number(Date.now()),
+            //         creator: account,
+            //         videoUrl:`https://arweave.net/${id}`
 
 
-                   });
-                   console.log(docRef )
-                   setTrigger(false)
-                   setTitle("")
-                   setDescription("")
-            }
-            catch(e){
-                console.log(e)
-                toast(e.message)
-            }
+            //        });
+            //        console.log(docRef )
+            //        setTrigger(false)
+            //        setTitle("")
+            //        setDescription("")
+            // }
+            // catch(e){
+            //     console.log(e)
+            //     toast(e.message)
+            // }
         
           }
          console.log(video)
