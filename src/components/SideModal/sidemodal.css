@@ -1,0 +1,20 @@
+.sidemodal-upload{
+    position: fixed;
+    bottom: -35%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color:rgb(88 28 135);
+    z-index: 1000;
+   
+}
+
+/* .sideoverlay-style{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+
+} */
