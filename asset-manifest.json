@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/everychain-nvb-deployed/static/css/main.6912f9b8.css",
+    "main.js": "/everychain-nvb-deployed/static/js/main.d72052d4.js",
+    "static/js/529.29b0fab2.chunk.js": "/everychain-nvb-deployed/static/js/529.29b0fab2.chunk.js",
+    "static/media/profilebackground.jpeg": "/everychain-nvb-deployed/static/media/profilebackground.83fd3c457f3c020ed862.jpeg",
+    "static/media/profileBg.webp": "/everychain-nvb-deployed/static/media/profileBg.ec843a0d3cdaa3d6c455.webp",
+    "static/media/avater.webp": "/everychain-nvb-deployed/static/media/avater.548e66de06087ddadf30.webp",
+    "static/media/encode.jpeg": "/everychain-nvb-deployed/static/media/encode.27ce7c1e25212c2e43f3.jpeg",
+    "static/media/vitalikimg.jpeg": "/everychain-nvb-deployed/static/media/vitalikimg.327d75ade820bc33378b.jpeg",
+    "static/media/livepeer.jpeg": "/everychain-nvb-deployed/static/media/livepeer.3ead67605c28e239705e.jpeg",
+    "static/media/landingimg.avif": "/everychain-nvb-deployed/static/media/landingimg.6df8662ff77562df8fbc.avif",
+    "static/media/streampic.webp": "/everychain-nvb-deployed/static/media/streampic.c25f7884dc4b426be9dd.webp",
+    "static/media/userprofile.webp": "/everychain-nvb-deployed/static/media/userprofile.5f3a3fdd4f7b378a1c11.webp",
+    "static/media/logo.svg": "/everychain-nvb-deployed/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/everychain-nvb-deployed/index.html",
+    "main.6912f9b8.css.map": "/everychain-nvb-deployed/static/css/main.6912f9b8.css.map",
+    "main.d72052d4.js.map": "/everychain-nvb-deployed/static/js/main.d72052d4.js.map",
+    "529.29b0fab2.chunk.js.map": "/everychain-nvb-deployed/static/js/529.29b0fab2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6912f9b8.css",
+    "static/js/main.d72052d4.js"
+  ]
+}
