@@ -93,8 +93,9 @@ export default function Uploader({setTrigger}) {
         
                 console.log(bundlr,"bbundlr") ;
                 const price = await bundlr.getPrice(video?.size);
+                const priceInt=parseInt(price)
                 console.log(price,"price")
-                const funded= await bundlr.fund(price);
+                const funded= await bundlr.fund(priceInt);
                 toast("Funding bundlr node")
                console.log(funded,"funded")
                var readStream = fileReaderStream(video, [])
